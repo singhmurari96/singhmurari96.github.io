@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
-  "author": "Ajit Kumar Singh",
+  "author": "Murari Singh",
   "license": "MIT",
   "dependencies": {
     "node-sass": "^4.14.1"
