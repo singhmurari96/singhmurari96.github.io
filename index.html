@@ -126,11 +126,34 @@
     <!-- End header -->
 
     <body>
+    <style>
+        #lead {
+            background-color: #f8f9fa; /* Adjust the background color as needed */
+            padding-bottom: 20px; /* Add some padding to the bottom */
+        }
+        #lead-content {
+            text-align: center; /* Center the content for better readability */
+            padding: 50px 20px; /* Adjust padding to ensure content is within a comfortable reading area */
+        }
+        .profile-pic img {
+            border-radius: 50%; /* Optional: Makes the profile picture circular */
+            width: 150px; /* Adjust the size as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        @media (max-width: 768px) {
+            #lead-content {
+                padding: 30px 15px; /* Less padding on smaller screens */
+            }
+            .profile-pic img {
+                width: 120px; /* Smaller profile picture on mobile devices */
+            }
+        }
+    </style>
     <div id="lead">
         <div id="lead-content">
-            <span class="profile-pic"><img src="images/portrait.jpg" alt="Murari Singh's Portrait" loading="lazy" width="200" height="200"></span>
-            <h2 id="typewritter" style="padding-bottom:1em;">
-                <div class="typewrite" data-period="1000" data-type='[ "Hi, I am Murari", "I am a Data Scientist", "I am Big Data Enthusiast", "I am a Chemical Engineer"]' style="color: rgba(50, 90, 208, 0.796);font-family: cursive;">
+            <span class="profile-pic"><img src="images/portrait.jpg" alt="Murari Singh's Portrait" loading="lazy"></span>
+            <h2 id="typewritter">
+                <div class="typewrite" data-period="1000" data-type='[ "Hi, I am Murari", "I am a Data Scientist", "I am Big Data Enthusiast", "I am a Chemical Engineer"]'>
                     <span class="wrap"></span>
                 </div> 
             </h2>
@@ -138,6 +161,8 @@
         </div>
         <div id="lead-overlay"></div>
     </div>
+</body>
+
 
         <!-- End #lead-content -->
 
